@@ -22,7 +22,7 @@ const Experience = () => {
         </div>
 
         <div className="experience-image">
-          <img src="/cirti.jpg" alt="Internship Certificate" />
+          <img src={process.env.PUBLIC_URL + "/cirti.jpg"} alt="Internship Certificate" />
         </div>
       </div>
     </section>
