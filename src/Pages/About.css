@@ -1,0 +1,125 @@
+.about {
+  padding: 80px 10%;
+  background: linear-gradient(135deg, #1f1c2c, #928dab);
+  color: #fff;
+  font-family: 'Segoe UI', sans-serif;
+  overflow: hidden;
+}
+
+.about-heading {
+  font-size: 42px;
+  text-align: center;
+  font-weight: 800;
+  color: #00ffd5;
+  margin-bottom: 60px;
+  position: relative;
+}
+
+.about-heading::after {
+  content: '';
+  position: absolute;
+  width: 80px;
+  height: 5px;
+  background: #00ffd5;
+  border-radius: 4px;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -15px;
+  animation: glow 2s infinite ease-in-out;
+}
+
+@keyframes glow {
+  0%, 100% {
+    box-shadow: 0 0 10px #00ffd5;
+  }
+  50% {
+    box-shadow: 0 0 20px #00ffd5, 0 0 30px #00ffd5;
+  }
+}
+
+.about-content {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.about-section {
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 16px;
+  padding: 30px;
+  box-shadow: 0 10px 30px rgba(0, 255, 213, 0.1);
+  backdrop-filter: blur(15px);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.about-section:hover {
+  transform: scale(1.015);
+  box-shadow: 0 12px 40px rgba(0, 255, 213, 0.2);
+}
+
+.about-section h3 {
+  font-size: 24px;
+  margin-bottom: 15px;
+  color: #ffffff;
+  background: linear-gradient(90deg, #00ffd5, #00c6ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.about-section p {
+  font-size: 17px;
+  line-height: 1.8;
+  color: #e0e0e0;
+}
+
+.date-range {
+  color: #ffcbf2;
+  font-size: 15px;
+}
+
+.skills {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 25px;
+  margin-top: 20px;
+}
+
+.skills h4 {
+  font-size: 18px;
+  margin-bottom: 6px;
+  color: #89f9c1;
+}
+
+.skills p {
+  font-size: 16px;
+  color: #fff;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .about {
+    padding: 60px 5%;
+  }
+
+  .about-heading {
+    font-size: 32px;
+  }
+
+  .about-section {
+    padding: 20px;
+  }
+
+  .about-section h3 {
+    font-size: 20px;
+  }
+
+  .about-section p,
+  .skills p {
+    font-size: 15px;
+  }
+
+  .skills {
+    grid-template-columns: 1fr;
+  }
+}

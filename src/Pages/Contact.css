@@ -1,0 +1,106 @@
+.contact {
+  padding: 80px 10%;
+  background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+  color: #fff;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.contact-title {
+  font-size: 42px;
+  text-align: center;
+  font-weight: 800;
+  color: #00ffd5;
+  margin-bottom: 60px;
+  position: relative;
+}
+
+.contact-title::after {
+  content: '';
+  width: 80px;
+  height: 5px;
+  background: #00ffd5;
+  position: absolute;
+  bottom: -15px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 10px;
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    box-shadow: 0 0 10px #00ffd5;
+  }
+  50% {
+    box-shadow: 0 0 25px #00ffd5;
+  }
+}
+
+.contact-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.contact-box {
+  background: rgba(255, 255, 255, 0.07);
+  padding: 30px 20px;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 255, 255, 0.1);
+  transition: all 0.3s ease;
+  text-align: left;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.contact-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 40px rgba(0, 255, 255, 0.3);
+}
+
+.contact-box a {
+  color: #fff;
+  font-size: 17px;
+  text-decoration: none;
+  word-break: break-word;
+  transition: color 0.2s;
+}
+
+.contact-box a:hover {
+  color: #00ffd5;
+}
+
+.contact-icon {
+  font-size: 26px;
+  color: #00ffd5;
+  min-width: 26px;
+}
+
+/* 📱 Mobile Responsive */
+@media (max-width: 600px) {
+  .contact {
+    padding: 60px 6%;
+  }
+
+  .contact-title {
+    font-size: 32px;
+    margin-bottom: 40px;
+  }
+
+  .contact-box {
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 20px;
+  }
+
+  .contact-box a {
+    font-size: 16px;
+  }
+
+  .contact-icon {
+    font-size: 22px;
+  }
+}
