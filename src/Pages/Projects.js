@@ -28,32 +28,42 @@ const projects = [
     url: "https://dsr096.github.io/newtictactoe/",
     description: "A ReactJS Tic Tac Toe game offering multiple grid sizes (3x3, 5x5, 7x7) for varied gameplay, allowing two players to take turns and compete for the win or a draw with an interactive UI.",
   },
+  {
+    title: "ToDo List Website",
+    url: "https://todo-gjdr.vercel.app/",
+    description: "A Todo app with Clerk Auth for secure login, enabling users to add and delete tasks. Built with React and Vite.",
+  },
+  {
+    title: "Quiz App",
+    url: "https://quizapp-mu-henna.vercel.app/",
+    description: "A React Vite-based interactive programming quiz app with Clerk authentication, featuring a countdown timer and instant score display at the end.",
+  },
 ];
 
 const Projects = () => {
   return (
-   <>
-   <Navbar/>
-    <section className="projects-section">
-      <h2 className="projects-title">My Projects</h2>
-      <div className="projects-grid">
-        {projects.map(({ title, url, description }, index) => (
-          <a
-            key={index}
-            href={url}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="project-card"
-            aria-label={`View project ${title}`}
-          >
-            <h3 className="project-title">{title}</h3>
-            <p className="project-description">{description}</p>
-            <span className="project-link-icon" aria-hidden="true">→</span>
-          </a>
-        ))}
-      </div>
-    </section>
-   </>
+    <>
+      <Navbar />
+      <section className="projects-section">
+        <h2 className="projects-title">My Projects</h2>
+        <div className="projects-grid">
+          {projects.map(({ title, url, description }, index) => (
+            <a
+              key={index}
+              href={url}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="project-card"
+              aria-label={`View project ${title}`}
+            >
+              <h3 className="project-title">{title}</h3>
+              <p className="project-description">{description}</p>
+              <span className="project-link-icon" aria-hidden="true">→</span>
+            </a>
+          ))}
+        </div>
+      </section>
+    </>
   );
 };
 

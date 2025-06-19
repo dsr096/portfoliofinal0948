@@ -137,7 +137,12 @@
     margin-bottom: 35px;
   }
 
+  .projects-grid {
+    grid-template-columns: 1fr; /* FULL WIDTH for mobile view */
+  }
+
   .project-card {
+    width: 100%; /* Ensure full width */
     padding: 20px 18px;
     border-radius: 16px;
   }

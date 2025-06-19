@@ -123,3 +123,20 @@ body {
     margin: 20px 0;
   }
 }
+
+/* Mobile menu when open */
+.navbar-links.open {
+  position: fixed; /* full screen cover */
+  top: 60px; /* adjust according to navbar height */
+  left: 0;
+  width: 100%;
+  background-color: #111827; /* same as navbar bg */
+  z-index: 999; /* sabse upar */
+  flex-direction: column;
+  padding: 20px 0;
+  gap: 20px;
+}
+
+.hamburger {
+  z-index: 1000; /* menu icon sabse upar rahe */
+}

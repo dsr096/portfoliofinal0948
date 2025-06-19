@@ -1,0 +1,173 @@
+/* Footer.css */
+
+.footer {
+  background-color: #111827; /* Dark background */
+  color: #d1d5db;
+  padding: 40px 20px 20px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 20px;
+  flex-wrap: nowrap; /* Very Important: No wrap on large screens */
+}
+
+.footer-section {
+  flex: 1; /* each section gets equal space */
+  min-width: 0;
+  background: none !important; /* FORCE no background (remove grey) */
+  box-shadow: none !important; /* in case any shadow */
+  border: none !important; /* remove any accidental border */
+}
+
+.footer-section h3 {
+  font-size: 18px;
+  margin-bottom: 15px;
+  color: #d1d5db;
+  border-bottom: 1px solid #374151;
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+.footer-section p,
+.footer-section li,
+.footer-section a {
+  color: #9ca3af;
+  font-size: 14px;
+  line-height: 1.6;
+  text-decoration: none;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 10px;
+}
+
+.footer-section ul li a:hover {
+  color: #60a5fa;
+  transition: color 0.3s;
+}
+
+.footer-icon {
+  margin-right: 8px;
+  vertical-align: middle;
+  color: #60a5fa;
+}
+
+.contact-social p {
+  display: flex;
+  align-items: center;
+  margin: 8px 0;
+}
+
+.social-icons {
+  margin-top: 10px;
+}
+
+.social-icons a {
+  color: #9ca3af;
+  margin-right: 12px;
+  font-size: 20px;
+  transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: #60a5fa;
+}
+
+.footer-bottom {
+  border-top: 1px solid #374151;
+  padding-top: 15px;
+  text-align: center;
+  font-size: 12px;
+  color: #6b7280;
+  margin-top: 20px;
+}
+
+/* Mobile Responsive */
+@media screen and (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-section {
+    width: 100%;
+    margin: 15px 0;
+  }
+
+  .social-icons {
+    justify-content: center;
+  }
+}
+
+/* Footer.css (Add/Update this in your file) */
+
+@media screen and (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-section {
+    width: 100%;
+    margin: 15px 0;
+  }
+
+  /* Contact & Social Fix Start */
+  .contact-social {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .contact-social p {
+    justify-content: center;
+    text-align: center;
+  }
+
+  .social-icons {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+  }
+  /* Contact & Social Fix End */
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap; /* mobile responsive ke liye */
+  gap: 20px;
+}
+
+.footer-section {
+  flex: 1; /* har section ko equal width */
+  min-width: 250px; /* mobile view ke liye */
+  padding: 10px;
+}
+
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column; /* mobile pe vertical ho jaye */
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-section {
+    min-width: unset; /* width free ho jaye */
+  }
+}

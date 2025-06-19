@@ -35,7 +35,7 @@ const Navbar = () => {
           </Link>
         </li>
         <li>
-          <Link to="/Experience" onClick={() => setMenuOpen(false)}>
+          <Link to="/experience" onClick={() => setMenuOpen(false)}>
             Experience
           </Link>
         </li>

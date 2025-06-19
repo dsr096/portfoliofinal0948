@@ -11,9 +11,14 @@ function Intro() {
           I’m passionate about web development and love working on creative, performance-focused web solutions.
         </p>
 
-        <a href="/DHRUV_CV.pdf" download className="download-btn">
-          Download CV
-        </a>
+        <a
+  href={process.env.PUBLIC_URL + "/DHRUV_CV.pdf"}
+  download
+  className="download-btn"
+>
+  Download CV
+</a>
+
       </div>
 
       <div className="intro-right">
