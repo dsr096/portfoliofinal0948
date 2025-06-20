@@ -1,6 +1,7 @@
 import React from 'react';
 import './Contact.css';
 import Navbar from '../Components/Navbar';
+import Footer from '../Components/Footer';
 
 const Contact = () => {
   return (
@@ -38,6 +39,7 @@ const Contact = () => {
           <button type="submit" className="submit-button">Send Message</button>
         </form>
       </section>
+      <Footer/>
     </>
   );
 };

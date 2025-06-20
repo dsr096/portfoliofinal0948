@@ -1,6 +1,7 @@
 import React from 'react';
 import './Projects.css';
 import Navbar from '../Components/Navbar';
+import Footer from '../Components/Footer';
 
 const projects = [
   {
@@ -38,6 +39,11 @@ const projects = [
     url: "https://quizapp-mu-henna.vercel.app/",
     description: "A React Vite-based interactive programming quiz app with Clerk authentication, featuring a countdown timer and instant score display at the end.",
   },
+  {
+    title: "E-commerce Clothing Website (ShopEase)",
+    url: "https://shopease096123.vercel.app/",
+    description: "ShopEase is a simple yet functional e-commerce clothing website built with React, featuring product listings, a basic login system, and add-to-cart functionality without any external libraries or backend services — ensuring a clean and minimalist design.",
+  },
 ];
 
 const Projects = () => {
@@ -63,6 +69,7 @@ const Projects = () => {
           ))}
         </div>
       </section>
+      <Footer/>
     </>
   );
 };

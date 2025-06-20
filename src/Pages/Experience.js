@@ -1,6 +1,7 @@
 import React from 'react';
 import './Experience.css';
 import Navbar from '../Components/Navbar';
+import Footer from '../Components/Footer';
 
 const Experience = () => {
   return (
@@ -26,6 +27,7 @@ const Experience = () => {
         </div>
       </div>
     </section>
+    <Footer/>
    </>
   );
 };

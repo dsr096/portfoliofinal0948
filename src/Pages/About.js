@@ -1,7 +1,7 @@
 import React from 'react';
 import './About.css';
 import Navbar from '../Components/Navbar';
-
+import Footer from '../Components/Footer';
 function About() {
   return (
     <>
@@ -79,6 +79,7 @@ function About() {
 
         </div>
       </section>
+     <Footer/>
     </>
   );
 }
