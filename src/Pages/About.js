@@ -51,6 +51,7 @@ function About() {
                 <div className="skill-items">
                   <img src={process.env.PUBLIC_URL + '/github.jpg'} alt="GitHub" />
                   <img src={process.env.PUBLIC_URL + '/vscode123.jpg'} alt="VS Code" />
+                  <img src={process.env.PUBLIC_URL + '/shopifylogo.jpg'} alt="Shopify" />
                 </div>
               </div>
 
